@@ -151,3 +151,9 @@ EMAIL_HOST_USER = 'james@leedsdancecentre.co.uk'
 EMAIL_HOST_PASSWORD = 'l0rd0ftherings@'
 EMAIL_PORT = 25
 EMAIL_USE_TLS = True
+
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
